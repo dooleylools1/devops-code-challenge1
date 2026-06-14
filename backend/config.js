@@ -1,3 +1,4 @@
-module.exports = {
-    CORS_ORIGIN: 'http://localhost:3000'
-}
+const config = {
+  backendUrl: "http://host.docker.internal:8080",
+};
+export default config;

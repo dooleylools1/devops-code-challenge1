@@ -1,4 +1,3 @@
-const config = {
-  backendUrl: "http://host.docker.internal:8080",
+module.exports = {
+CORS_ORIGIN: 'http://devops-challenge-alb-2136896932.us-east-2.elb.amazonaws.com'
 };
-export default config;

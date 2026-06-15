@@ -16,6 +16,12 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Headers', '*')
     next();
 })
+
+// Add health check BEFORE the catch-all route
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: 'healthy' })
+})
+
 app.get(/.*/, (req, res) => {
     console.log(`${new Date().toISOString()} GET`)
     res.json({id: ID})

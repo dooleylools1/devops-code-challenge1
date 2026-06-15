@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // ====> Replace with your AWS region, e.g., 'us-east-1'
-        AWS_REGION = 'us-east2'
+        AWS_REGION = 'us-east-2'
 
         // ====> Replace with your own ECR repository URIs
         FRONTEND_REPO = '491558244310.dkr.ecr.us-east-2.amazonaws.com/devops-challenge-frontend'

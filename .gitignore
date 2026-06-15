@@ -1,1 +1,12 @@
 node_modules/
+
+# Terraform files that should NEVER be pushed
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+*.tfvars.json
+crash.log
+override.tf
+override.tf.json
